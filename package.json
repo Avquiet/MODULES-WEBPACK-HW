@@ -1,0 +1,39 @@
+{
+  "name": "modules-webpack-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "serve": "webpack serve --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avquiet/MODULES-WEBPACK-HW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avquiet/MODULES-WEBPACK-HW/issues"
+  },
+  "homepage": "https://github.com/Avquiet/MODULES-WEBPACK-HW#readme",
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "i": "^0.3.6",
+    "media-loader": "0.0.3",
+    "mini-css-extract-plugin": "^2.2.2",
+    "parcel-bundler": "^1.12.5",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0"
+  },
+  "dependencies": {
+    "luxon": "^2.0.2",
+    "webpack-bundle-analyzer": "^4.4.2"
+  }
+}

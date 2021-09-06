@@ -1,4 +1,8 @@
-import { DateTime } from "./luxon.js"; // 1
+import { DateTime } from "./luxon.js";
+import { handleCalcDates }  from "./functions.js";
+
+const dateCalcForm = document.getElementById("datecalc");
+dateCalcForm.addEventListener("submit", handleCalcDates);
 
 export function diffDates(firstDate, secondDate) {
 
@@ -6,12 +10,11 @@ export function diffDates(firstDate, secondDate) {
     secondDate = DateTime.fromISO(secondDate);
 
     if (firstDate > secondDate)
-        [firstDate, secondDate] = [secondDate, firstDate] // 2
+        [firstDate, secondDate] = [secondDate, firstDate]
 
     return secondDate.diff(firstDate, ['years', 'months', 'days']).toObject();
 }
 
-// 3
 export const diffToHtml = diff => `
     <span> 
         ${diff.years ? 'Лет: ' + diff.years : ''} 

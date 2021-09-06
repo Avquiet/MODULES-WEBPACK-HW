@@ -1,6 +1,5 @@
-import { diffDates, diffToHtml } from "./datecalc.js"; // 1
-import { formatError } from "./utils.js"; // 2
-
+import { diffDates, diffToHtml } from "./datecalc.js"; 
+import { formatError } from "./utils.js";
 
 const dateCalcResult = document.getElementById("datecalc__result");
 
