@@ -16,12 +16,3 @@ export const handleCalcDates = event => {
     } else dateCalcResult.innerHTML = formatError("Для расчета промежутка необходимо заполнить оба поля"); // 5
 }
 
-let timerInput = document.getElementById("timer"); 
-
-
-export function timeRun() {
-    timerTime = parseInt(timerInput.value) * 60
-}
-export function timePause() {
-    clearInterval(timer)
-}
